@@ -1,0 +1,187 @@
+#twitter-home {
+    width: 1100px;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00acee;
+    color: white;
+    padding: 20px;
+  }
+  
+  #header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo {
+    width: 50px;
+    margin-right: 20px;
+  }
+  
+  #search-input {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    width: 250px;
+  }
+  
+  #header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  #home-button,
+  #explore-button,
+  #notifications-button,
+  #messages-button,
+  #profile-button {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #home-button:hover,
+  #explore-button:hover,
+  #notifications-button:hover,
+  #messages-button:hover,
+  #profile-button:hover {
+    background-color: #0077b5;
+  }
+  
+  #notifications-button i,
+  #messages-button i {
+    margin-right: 5px;
+  }
+  
+  #profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #tweet-compose {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccd6dd;
+    padding-bottom: 20px;
+  }
+  
+  #profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  #tweet-textarea {
+    font-size: 16px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    resize: none;
+  }
+  
+  #tweet-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #add-photo-button,
+  #tweet-button {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: #00acee;
+    cursor: pointer;
+    outline: none;
+    margin-left: 20px;
+  }
+  
+  #add-photo-button i,
+  #tweet-button i {
+    margin-right: 5px;
+  }
+  
+  #tweet-list {
+    margin-top: 20px;
+  }
+  
+  .tweet {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+  /* Add some basic styling to the form */
+  form {
+    font-size: 16px;
+    width: 500px;
+    margin: 0 auto;
+    }
+    
+    /* Style the form labels */
+    label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    }
+    
+    /* Style the form inputs and textarea */
+    input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    
+    /* Style the submit button */
+    button{
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    /* Add a hover effect to the submit button */
+    .flash-message {
+        background-color: #dff0d8;
+        border-color: #d0e9c6;
+        color: #3c763d;
+    }
+    .go-back{
+    
+      background-color: #1da1f2;
+      color: #ffffff;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none
+    }
+  
