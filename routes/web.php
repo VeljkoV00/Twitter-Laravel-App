@@ -22,7 +22,7 @@ Route::put('/profiles/{user}', [UserController::class, 'update'])->name('update_
 Route::post('/home', [TweetController::class,'store'])->name('tweet_store');
 Route::get('/profiles/{user}/tweets/{tweet}',[TweetController::class, 'edit'])->name('edit_tweet');
 Route::put('/profiles/{user}/tweets/{tweet}',[TweetController::class, 'update'])->name('update_tweet');
-
+Route::delete('/profiles/{user}tweets/{tweet}', [TweetController::class, 'delete'])->name('tweet_delete');
 
 
 Route::get('/dashboard', function () {

@@ -2,8 +2,10 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Tweet;
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TweetMiddleware
 {
@@ -16,7 +18,11 @@ class TweetMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        
+        $tweet_id = $request->route('tweet');
+        $tweet = Tweet::findOrFail($tweet_id);
+        if($tweet->user_id !== Auth::user()->id){
+            abort(403);
+        }
         return $next($request);
     }
 }

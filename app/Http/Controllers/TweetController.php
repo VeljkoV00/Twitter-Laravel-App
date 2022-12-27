@@ -39,4 +39,10 @@ class TweetController extends Controller
 
 
     }
+
+    public function delete(User $user, Tweet $tweet){
+
+        $tweet->delete();
+        return redirect()->route('show_profile', $user);
+    }
 }

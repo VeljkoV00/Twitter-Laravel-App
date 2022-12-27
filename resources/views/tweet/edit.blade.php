@@ -17,6 +17,11 @@
     <button type="submit">Save</button>
     <a href="{{ route('show_profile', $tweet->user) }}" class="go-back">Go back</a>
   </form> 
+  <form action="{{ route('tweet_delete',[$tweet->user, $tweet]) }}" method="POST">
+    @method('DELETE')
+    @csrf
+    <button type="submit" class="delete-button">Delete</button>
+  </form>
   @if (session('message'))
       <div class="flash-message">
           {{ session('message') }}
